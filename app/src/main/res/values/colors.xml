@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main">#DAF0F0</color>
+    <color name="button">#FD6814</color>
+    <color name="icon_active">#40A7AD</color>
+    <color name="icon_inactive">#AED5D7</color>
+    <color name="golden">#F5BC2B</color>
+    <color name="fill">#FFF6F0</color>
+    <color name="hint_text">#D9D9D9</color>
+    <color name="searchbar">#F0F0F0</color>
+    <color name="icon">#D65106</color>
+    <color name="search_icon">#40A7AD</color>
+    <color name="woman">#F527A3</color>
+    <color name="man">#4886E3</color>
+    <color name="grey">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_grey">#95A1A2</color>
+    <color name="light_grey">#F5F5F5</color>
+</resources>

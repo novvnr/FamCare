@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".view.main.FilterFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/contentFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="Filter"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Gender"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/optionGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ToggleButton
+                            android:id="@+id/buttonNanny"
+                            android:layout_width="280dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/toggle_selector"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Female"
+                            android:textAllCaps="false"
+                            android:textColor="@color/toggle_text_selector"
+                            android:textOff="Female"
+                            android:textOn="Female"
+                            android:textSize="16sp" />
+
+                        <ToggleButton
+                            android:id="@+id/buttonManny"
+                            android:layout_width="280dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/toggle_selector"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Male"
+                            android:textAllCaps="false"
+                            android:textColor="@color/toggle_text_selector"
+                            android:textOff="Male"
+                            android:textOn="Male"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Type"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/optionType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ToggleButton
+                            android:id="@+id/buttonDaily"
+                            android:layout_width="280dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="16dp"
+                            android:background="@drawable/toggle_selector"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Daily"
+                            android:textAllCaps="false"
+                            android:textColor="@color/toggle_text_selector"
+                            android:textOff="Daily"
+                            android:textOn="Daily"
+                            android:textSize="16sp" />
+
+                        <ToggleButton
+                            android:id="@+id/buttonMonthly"
+                            android:layout_width="280dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/toggle_selector"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Monthly"
+                            android:textAllCaps="false"
+                            android:textColor="@color/toggle_text_selector"
+                            android:textOff="Monthly"
+                            android:textOn="Monthly"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Most Popular"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/optionMost1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/buttonJabodetabek"
+                            android:layout_width="130dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/toggle_selector"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Jabodetabek"
+                            android:textAllCaps="false"
+                            android:textColor="@color/toggle_text_selector"
+                            android:textOff="Jabodetabek"
+                            android:textOn="Jabodetabek"
+                            android:textSize="16sp" />
+
+                        <ToggleButton
+                            android:id="@+id/buttonElderlyCare"
+                            android:layout_width="130dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@drawable/toggle_selector"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Elderly Care"
+                            android:textAllCaps="false"
+                            android:textColor="@color/toggle_text_selector"
+                            android:textOff="Elderly Care"
+                            android:textOn="Elderly Care"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/optionMost2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/buttonChildCare"
+                            android:layout_width="130dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/toggle_selector"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Child Care"
+                            android:textAllCaps="false"
+                            android:textColor="@color/toggle_text_selector"
+                            android:textOff="Child Care"
+                            android:textOn="Child Care"
+                            android:textSize="16sp" />
+
+                        <ToggleButton
+                            android:id="@+id/buttonDisabilityCare"
+                            android:layout_width="130dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@drawable/toggle_selector"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Disability Care"
+                            android:textAllCaps="false"
+                            android:textColor="@color/toggle_text_selector"
+                            android:textOff="Disability Care"
+                            android:textOn="Disability Care"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/optionMost3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/buttonExperience"
+                            android:layout_width="280dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/toggle_selector"
+                            android:fontFamily="@font/montserrat"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:text="> 5 Years Experience"
+                            android:textAllCaps="false"
+                            android:textColor="@color/toggle_text_selector"
+                            android:textOff="> 5 Years Experience"
+                            android:textOn="> 5 Years Experience"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contentFilter"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="center"
+                android:radius="8dp"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/buttonApply"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/icon_active"
+                android:fontFamily="@font/montserratsemibold"
+                android:gravity="center"
+                android:radius="8dp"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

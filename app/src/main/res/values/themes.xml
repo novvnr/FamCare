@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.FamCare" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/icon_active</item>
+        <item name="colorOnPrimary">@color/main</item>
+    </style>
+
+    <style name="Theme.FamCare" parent="Base.Theme.FamCare" />
+</resources>
